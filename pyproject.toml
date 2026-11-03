@@ -17,10 +17,10 @@ dependencies = [
     "pandas>=2.2.3",
     "pyannote-audio>=4.0.0",
     "huggingface-hub>=1.5.0,<2",
-    "torch>=2.12.1,<2.13",
+    "torch>=2.14.1,<2.15",
     "torchaudio>=2.11.0,<2.12",
-    "torchvision>=0.27.1,<0.28",
-    "torchcodec>=0.13.0,<0.14; (sys_platform == 'linux' and platform_machine == 'x86_64') or sys_platform == 'darwin' or sys_platform == 'win32'",
+    "torchvision>=0.29.1,<0.30",
+    "torchcodec>=0.17.0,<0.18; (sys_platform == 'linux' and platform_machine == 'x86_64') or sys_platform == 'darwin' or sys_platform == 'win32'",
     "transformers>=5.13.1,<5.14",
     "triton>=3.3.0; sys_platform == 'linux' and platform_machine == 'x86_64'" # only install triton on x86_64 Linux
 ]
@@ -46,7 +46,7 @@ include = ["whisperx*"]
 [tool.uv]
 exclude-newer = "1 week"
 override-dependencies = [
-    "torchcodec>=0.13.0,<0.14; (sys_platform == 'linux' and platform_machine == 'x86_64') or sys_platform == 'darwin' or sys_platform == 'win32'",
+    "torchcodec>=0.17.0,<0.18; (sys_platform == 'linux' and platform_machine == 'x86_64') or sys_platform == 'darwin' or sys_platform == 'win32'",
 ]
 
 [tool.uv.pip]
